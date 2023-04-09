@@ -1,0 +1,18 @@
+:root {
+    --blue-500: #4263EB;
+    --blue-700: #364FC7;
+    --white-fff: #FFFFFF;
+    --grey-opacity-1: rgba(33, 37, 41, 0.5);
+    --grey-100: #F8F9FA;
+    --grey-200: #DEE2E6;
+    --grey-400: #868E96;
+    --grey-500: #495057;
+    --grey-700: #212529;
+    --grey-900: #0A0C0D;
+}
+
+img {
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+}

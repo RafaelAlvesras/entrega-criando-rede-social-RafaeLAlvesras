@@ -80,6 +80,6 @@ export const suggestUsers = [
     id: 3,
     user: "Rafael Bertoldo",
     stack: "Fullstack Engineer",
-    img: "./src/assets/img/user7.svg",
-  },
+    img: "./src/assets/img/perfil7.jpg",
+  }
 ];
