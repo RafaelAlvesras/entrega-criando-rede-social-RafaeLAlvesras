@@ -1,9 +1,9 @@
 export const users = [
   {
     id: 1,
-    user: "Samuel Leão",
+    user: "Rafael Alves",
     stack: "Front end Engineer",
-    img: "./src/assets/img/user1.svg",
+    img: "./src/assets/img/Perfil.jpg",
   },
   {
     id: 2,

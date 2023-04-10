@@ -114,10 +114,10 @@
 }
 
 .postButton:hover {
-    background: var(--grey-400);
-    border: 2px solid var(--grey-400);
+    background: var(--blue-500);
+    border: 2px solid var(--blue-500);
   
-    color: var(--grey-700);
+    color: var(--white-fff);
 }
 
 @media(min-width: 769px){

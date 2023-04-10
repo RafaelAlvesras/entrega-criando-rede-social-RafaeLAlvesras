@@ -38,7 +38,7 @@ function renderSuggestUsers(list) {
         const suggestProfDiv = document.createElement("div")
         const suggestNameDiv = document.createElement("div")
         const followDiv = document.createElement("div")
-        const followButton = document.createElement("button")
+        const followButton = document.createElement("img")
         const userPhoto = document.createElement("img")
         const userName = document.createElement("h1")
         const userStack = document.createElement("p")
@@ -53,12 +53,12 @@ function renderSuggestUsers(list) {
         userPhoto.alt = element.user
         userName.innerText = element.user
         userStack.innerText = element.stack
-        followButton.innerText = "Seguir"
+        followButton.src = "./src/assets/img/btnFollowWhite.jpg"
 
         suggestUserLi.classList.add("suggestUserLi")
         suggestProfDiv.classList.add("suggestProfDiv")
         followDiv.classList.add("followDiv")
-        followButton.id = "followButton"
+        followButton.classList.add("followButtonOne")
         userPhoto.classList.add("userPhoto")
         suggestNameDiv.classList.add("suggestNameDiv")
         userName.classList.add("userSuggestName")
@@ -68,9 +68,9 @@ function renderSuggestUsers(list) {
             followButton.classList.toggle("followButton")
 
             if (followButton.classList.contains("followButton")) {
-                followButton.innerText = "Seguindo"
+                followButton.src = "./src/assets/img/btnFollowBlue.jpg"
             } else {
-                followButton.innerText = "Seguir"
+                followButton.src = "./src/assets/img/btnFollowWhite.jpg"
             }
         })
 
@@ -99,6 +99,8 @@ function renderPosts(list) {
         const likeBtn = document.createElement("img")
         const modalController = document.createElement("dialog")
 
+        const textPostLmt = textLimited(element.text, 170)
+
         postsList.appendChild(divPost)
         divPost.append(divProfile, titlePost, textPost, divBtnLike, modalController)     
         divProfile.append(profilePhoto, divNamePost)
@@ -125,7 +127,7 @@ function renderPosts(list) {
         StackPost.innerText = element.stack
         
         titlePost.innerText = element.title
-        textPost.innerText = element.text
+        textPost.innerText = textPostLmt
         
         buttonOpenPost.innerText = "Abrir Post"
         buttonOpenPost.dataset.postsId = element.id
@@ -255,9 +257,8 @@ function createPost(array, list) {
                     img: element.img,
                     likes: 0
                 }
-
                 array.unshift(newPost)
-                  
+                      
                 renderNewPost(newPost)
             }
         })
@@ -265,6 +266,18 @@ function createPost(array, list) {
         textPost.value = ""
 
     })}
+
+    function textLimited(text, characters){
+        let textPostLmt = ""
+
+        for(let i = 0; i < characters; i++){
+            textPostLmt += text[i]
+        }
+    
+        let textPost = `${textPostLmt}...`
+        
+        return textPost
+    }
 
 
 

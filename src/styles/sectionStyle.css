@@ -1,6 +1,7 @@
 .TitleSection {
     display: flex;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    padding-left: 1rem;
     width: 100%;
     height: 2.5rem;
     font-style: normal;

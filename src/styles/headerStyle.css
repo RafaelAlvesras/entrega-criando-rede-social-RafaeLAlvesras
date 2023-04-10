@@ -43,6 +43,6 @@ header {
     .header__nav{
         justify-content: space-between;
         padding-left: 5rem;
-        padding-right: 12rem;
+        padding-right: 10%;
     }
 }
