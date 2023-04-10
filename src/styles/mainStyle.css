@@ -40,8 +40,8 @@
 
 .userMainStack {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 0.875rem;
+    line-height: 1rem;
     color: var(--grey-500);
 }
 
@@ -62,7 +62,7 @@
     height: 3.25rem;
     background: var(--white-fff);
     border: 2px solid var(--grey-200);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
@@ -75,9 +75,9 @@
     gap: 0.625rem;
     width: 90%;
     height: 8.125rem;
-    background: var(--white-fff);
+    background-color: var(--white-fff);
     border: 2px solid var(--grey-200);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     box-sizing: border-box;
     font-size: 1rem;
     font-weight: 400;
@@ -121,12 +121,6 @@
 }
 
 @media(min-width: 769px){
-    
-    .modeDiv{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
 
     .divPostButton{
         padding-right: 0;
